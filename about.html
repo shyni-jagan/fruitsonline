@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <style>
+         .about{
+              width:100%;
+              height:100vh;
+              padding-top:40px;
+              display:flex;
+              justify-content:space-around;
+              color:green;
+              font-size:40px;
+         }
+         .about .about_image img{
+              width:800px;
+              height:850px;
+         }
+         body{
+              background-image:url({% static 'image/line2.jpg' %});
+              background-repeat:no-repeat;
+              background-size:cover;
+              min-height:100%;
+              width:100%;
+         }
+
+
+
+
+     </style>
+</head>
+<body>
+<div class="about">
+    <div class="about_image">
+        <img src="{% static 'image/mix.jpg' %}">
+    </div>
+    <div class="about-tag">
+        <h1>About Us</h1>
+        <p>Fruit is the sweet, fleshy, edible part of a plant. It generally contains seeds. Fruits are usually eaten raw, although some varieties can be cooked. They come in a wide variety of colours, shapes and flavours.
+Eating foods such as fruits that are lower in calories instead of higher-calorie food may be useful in helping to lower calorie intake. Fruits provide nutrients vital for health and maintenance of your body, such as fiber, vitamin C, potassium, and folate
+        <br><br>
+        fruits. Fruits are important sources of vitamins and carbohydrates like fiber and sugar. They are low in calories and naturally sweet. Fruits and their juices are good sources of water, too. Different fruits contain different vitamins, so it is important to eat a variety of fruits.
+        </p>
+        <a href="{% url 'products' %}" class="about_btn">Learn More</a>
+    </div>
+</div>
+
+</body>
+</html>
